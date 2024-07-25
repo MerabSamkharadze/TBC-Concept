@@ -212,6 +212,66 @@ header {
   background-repeat: no-repeat;
 }
 
+.text_baner {
+  color: #141719;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/* choose section */
+.heading_wraper {
+  color: #141719;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.grid_1_sec {
+  height: 540px;
+}
+.grid_1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+}
+
+.left_grid {
+  height: 541px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 30px;
+}
+.digital {
+  background-image: url(../images/digital.png);
+  max-height: 256px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #3295ce;
+  border-radius: 8px;
+}
+.premium {
+  background-image: url(../images/premium.png);
+  max-height: 256px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+.right_grid {
+  background-image: url(../images/360.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  max-height: 540px;
+  border-radius: 8px;
+}
+
+/* choose section */
+
 @media (max-width: 1440px) {
   .header_menu {
     font-size: 14px;
@@ -241,5 +301,8 @@ header {
 @media (max-width: 770px) {
   .banner_inner_content button {
     width: 100%;
+  }
+  .text_baner {
+    font-size: 28px;
   }
 }
