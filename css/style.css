@@ -229,6 +229,7 @@ header {
 }
 .grid_1_sec {
   height: 540px;
+  margin-bottom: 50px;
 }
 .grid_1 {
   width: 100%;
@@ -251,6 +252,9 @@ header {
   background-repeat: no-repeat;
   background-color: #3295ce;
   border-radius: 8px;
+  cursor: pointer;
+  background-size: 100%;
+  transition: background-size 0.5s ease;
 }
 .premium {
   background-image: url(../images/premium.png);
@@ -259,6 +263,9 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 8px;
+  cursor: pointer;
+  background-size: 100%;
+  transition: background-size 0.5s ease;
 }
 .right_grid {
   background-image: url(../images/360.png);
@@ -268,6 +275,46 @@ header {
   height: 100%;
   max-height: 540px;
   border-radius: 8px;
+  cursor: pointer;
+  background-size: 170%;
+  transition: background-size 0.5s ease;
+}
+.digital:hover,
+.premium:hover {
+  background-size: 103%;
+}
+.right_grid:hover {
+  background-size: 175%;
+}
+.grid_card {
+  display: grid;
+  height: 100%;
+}
+.grid_1_inner_contant {
+  display: flex;
+  align-items: flex-end; /* This aligns the h1 tag to the bottom of the grid item */
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  background-color: #14171951;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  text-align: left;
+  border-radius: 8px;
+}
+.grid_1_inner_contant h1 {
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.grid_link {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.grid_link:hover {
+  text-decoration: none;
+  color: #c4cdd0;
 }
 
 /* choose section */
