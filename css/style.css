@@ -222,10 +222,6 @@ header {
 }
 /* choose section */
 
-.grid_1_sec {
-  height: 540px;
-  margin-bottom: 50px;
-}
 .grid_1 {
   width: 100%;
   display: grid;
@@ -335,7 +331,7 @@ header {
     z-index: 999;
   }
 }
-@media (max-width: 1110px) {
+@media (max-width: 1169px) {
   .digital,
   .premium,
   .right_grid {
@@ -361,14 +357,13 @@ header {
 
 @media (max-width: 760px) {
   .left_grid {
+    height: 270px;
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
     grid-template-columns: 350px 350px;
     grid-template-rows: 1fr;
     grid-column-gap: 30px;
   }
   .grid_1 {
-    height: 270px;
     overflow: scroll;
     grid-template-columns: 730px 350px;
     grid-column-gap: 30px;
