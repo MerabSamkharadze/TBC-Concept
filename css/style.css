@@ -370,7 +370,7 @@ header {
   margin-top: 35px;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 200px;
+  grid-template-columns: 1fr 1fr;
   gap: 50px;
   color: black;
 }
@@ -457,6 +457,112 @@ header {
 }
 .second {
   display: none;
+}
+
+/* triger */
+.button_menu {
+  position: fixed;
+  z-index: 999;
+  right: 40px;
+  bottom: 40px;
+  display: grid;
+  grid-template-rows: 56px;
+}
+.button_clicked_content {
+  grid-row-gap: 12px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  padding-bottom: 12px;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.active {
+  display: block;
+}
+.button-menu_button {
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #eef1f1;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  transition: background-color 0.25s ease-in-out;
+  display: flex;
+  transition: background-color 0.4s;
+}
+.button-menu_button:hover {
+  color: #fff;
+  background-color: #3295ce;
+}
+.button_menu_trigger {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #424a4d;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  transition: background-color 0.25s ease-in-out;
+  display: flex;
+}
+.button_menu_trigger:hover {
+  background-color: rgba(66, 74, 77, 0.8);
+}
+.triger_icon {
+  position: absolute;
+  margin-top: 8px;
+  z-index: 200;
+  opacity: 1;
+}
+.triger_icon_over {
+  position: absolute;
+  margin-top: 8px;
+  z-index: 100;
+  opacity: 0;
+}
+
+/* toltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(61, 58, 58, 0.938);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 120%;
+  transition: visibility 0.1s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent rgba(61, 58, 58, 0.938);
+}
+.tooltip:hover .tooltiptext {
+  transition: visibility 0.1s;
+  visibility: visible;
 }
 
 @media (max-width: 1000px) {
@@ -569,6 +675,12 @@ header {
   }
   .digital_contant h1 {
     margin-top: 40px;
+  }
+  .offers_header_container h1 {
+    font-size: 15px;
+  }
+  .offers_header_container div span {
+    font-size: 10px;
   }
 }
 
