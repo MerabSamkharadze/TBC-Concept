@@ -70,12 +70,11 @@ strong {
   height: auto;
   background-size: cover;
   border-radius: 8px 8px 0 0;
-  transition: all 0.5s;
 }
 
-.swiper_img img:hover {
+/* .swiper_img img:hover {
   transform: translateY(-4px);
-}
+} */
 .top_right {
   position: absolute;
   top: 16px;
@@ -91,5 +90,27 @@ strong {
 }
 .top_right img {
   width: 100%;
-  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  strong {
+    font-size: 12px;
+  }
+  .swiper_content_inner p {
+    font-size: 9px;
+  }
+  .swiper-container {
+    height: 500px;
+  }
+}
+@media (max-width: 700px) {
+  strong {
+    font-size: 10px;
+  }
+  .swiper_content_inner p {
+    font-size: 8px;
+  }
+  .swiper-slide {
+    height: 10px;
+  }
 }

@@ -2,18 +2,36 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const swiper = new Swiper(".swiper-container", {
-    slidesPerView: 3, // Number of slides to show at once
-    spaceBetween: 30, // Space between slides in px
-    loop: false, // Enable continuous loop mode
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: false,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
     scrollbar: {
       el: ".swiper-scrollbar",
-      hide: false, // Always show scrollbar
-      draggable: true, // Make scrollbar draggable
+      hide: false,
+      draggable: true,
     },
-    simulateTouch: true, // Enable dragging on desktop (default behavior)
+    simulateTouch: true,
+    breakpoints: {
+      1100: {
+        slidesPerView: 3,
+      },
+      900: {
+        slidesPerView: 2.5,
+      },
+
+      700: {
+        slidesPerView: 1.8,
+      },
+      300: {
+        slidesPerView: 1.1,
+      },
+      0: {
+        slidesPerView: 0.4,
+      },
+    },
   });
 });

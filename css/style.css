@@ -735,6 +735,12 @@ footer {
   .digital_contant h1 {
     font-size: 20px;
   }
+  .padding_global {
+    padding: 5px;
+  }
+  header {
+    padding: 5px;
+  }
 }
 
 @media (max-width: 390px) {
