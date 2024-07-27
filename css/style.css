@@ -612,6 +612,14 @@ footer {
   font-weight: 700;
 }
 
+/* products_section_baner */
+.products_section_baner {
+  color: #141719;
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
 @media (max-width: 1000px) {
   .first {
     display: none;
