@@ -33,3 +33,5 @@ button_menu_trigger.addEventListener("click", () => {
     clicked = true;
   }
 });
+
+//swiper
