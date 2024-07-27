@@ -116,7 +116,7 @@ strong {
   height: 50px;
   object-fit: fill;
 }
-.swiper_content_inner {
+.swiper_content_inner_prizes {
   grid-row-gap: 24px;
   flex-direction: column;
   align-items: flex-start;
