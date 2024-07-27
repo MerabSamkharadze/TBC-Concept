@@ -1,0 +1,155 @@
+footer {
+  border-top: 1px solid #eef1f1;
+  background-color: white;
+  padding-top: 40px;
+  margin-top: 60px;
+}
+
+.footer-container,
+.footer-content,
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  max-width: 1110px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
+  padding: 0 47px 45px 47px;
+}
+
+.footer-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-header .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-header span {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.footer-lang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.footer-lang svg {
+  height: 16px;
+  width: 16px;
+}
+
+.footer-lang:hover > .lang {
+  display: flex !important;
+}
+
+.lang {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  top: 35px;
+  color: #141719;
+  background-color: #fff;
+  border: 1px solid #e1e4e5;
+  border-radius: 4px;
+  flex-direction: column;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: 500;
+  box-shadow: 0 4px 6px 2px rgba(12, 43, 67, 0.05);
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 45px;
+  border-bottom: 1px solid #eef1f1;
+}
+
+.footer-content-column {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-content-column .a-tag {
+  color: #141719;
+  font-weight: 700;
+}
+
+.footer-content-column a,
+.footer-bottom a {
+  cursor: pointer;
+}
+
+.footer-content-column .a-tag:hover {
+  color: #141719;
+}
+
+.footer-content-column a:hover,
+.footer-bottom a:hover {
+  color: #007aff;
+}
+
+.footer-bottom .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer-header span {
+    display: none;
+  }
+
+  .footer-bottom {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-content-column {
+    width: 100%;
+  }
+}
+
+.inner-a-tags {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 24px;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 1000px) {
+  .no-height {
+    height: 0;
+    overflow: hidden;
+  }
+}

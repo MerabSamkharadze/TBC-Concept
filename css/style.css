@@ -570,13 +570,33 @@ header {
   visibility: visible;
 }
 
-/* footer  */
-footer {
-  background-color: #001682;
-  width: 100%;
-  padding-left: 47px;
-  padding-right: 47px;
+.tooltip_lang {
+  position: relative;
+  display: inline-block;
 }
+
+.tooltip_lang .tooltiptext_lang {
+  visibility: hidden;
+  width: 64px;
+  background-color: white;
+  border: 1px solid black;
+  color: #555f62;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  /* left: 50%; */
+  margin-left: -55px;
+}
+.tooltiptext_lang span {
+  margin: 5px 0px;
+}
+
+.tooltip_lang:hover .tooltiptext_lang {
+  visibility: visible;
+}
+
 .footer_head {
   max-width: 1110px;
   background-color: gray;
@@ -610,6 +630,7 @@ footer {
   margin-top: 0;
   font-size: 24px;
   font-weight: 700;
+  margin-top: 50px;
 }
 
 /* products_section_baner */
