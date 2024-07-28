@@ -1,12 +1,11 @@
 footer {
   border-top: 1px solid #eef1f1;
   background-color: white;
-  padding-top: 40px;
+  /* padding-top: 40px; */
   margin-top: 60px;
 }
 
 .footer-container,
-.footer-content,
 .footer-bottom {
   width: 100%;
   display: flex;
@@ -14,6 +13,15 @@ footer {
   margin-left: 50%;
   transform: translateX(-50%);
   margin-top: 50px;
+  padding: 0 47px 45px 47px;
+}
+.footer-content {
+  width: 100%;
+  display: flex;
+  max-width: 1110px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+
   padding: 0 47px 45px 47px;
 }
 
