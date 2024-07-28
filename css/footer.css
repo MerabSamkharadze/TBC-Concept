@@ -156,6 +156,14 @@ footer {
   gap: 24px;
   flex-direction: column;
 }
+.colection_click,
+.library_click,
+.offer_click,
+.prod_click {
+  height: 135px;
+  overflow: hidden;
+  transition: height 0.3s;
+}
 
 @media (max-width: 775px) {
   .colection_click,
