@@ -42,6 +42,11 @@ footer {
   gap: 4px;
   position: relative;
   cursor: pointer;
+  padding: 0px 8px;
+  border-radius: 5px;
+}
+.footer-lang:hover {
+  background-color: #ededed;
 }
 
 .footer-lang svg {
@@ -59,11 +64,12 @@ footer {
   transform: translateX(-50%);
   width: 100%;
   text-align: center;
+  font-weight: 600;
   top: 35px;
-  color: #141719;
+  color: #555f62;
   background-color: #fff;
   border: 1px solid #e1e4e5;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   flex-direction: column;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -119,7 +125,7 @@ footer {
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 775px) {
   .footer-header span {
     display: none;
   }
@@ -134,7 +140,12 @@ footer {
   }
 
   .footer-content-column {
+    border-bottom: 1px solid #d1d5d6;
+    margin-top: 20px;
     width: 100%;
+  }
+  .footer-container {
+    border-bottom: 1px solid #d1d5d6;
   }
 }
 
@@ -144,12 +155,15 @@ footer {
   justify-content: center;
   gap: 24px;
   flex-direction: column;
-  margin-bottom: 24px;
 }
 
-@media screen and (max-width: 1000px) {
-  .no-height {
+@media (max-width: 775px) {
+  .colection_click,
+  .library_click,
+  .offer_click,
+  .prod_click {
     height: 0;
     overflow: hidden;
+    transition: height 0.3s;
   }
 }

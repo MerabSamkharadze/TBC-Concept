@@ -1,3 +1,4 @@
+"use strict";
 const lang = document.querySelector(".lang");
 
 document.querySelector(".footer-lang").addEventListener("click", () => {
@@ -13,11 +14,23 @@ const footerATags = document.querySelectorAll(".footer-content-column");
 footerATags.forEach((el) => {
   el.addEventListener("click", () => {
     const innerTagsDiv = el.querySelector("div");
+    console.log(innerTagsDiv);
 
-    if (innerTagsDiv.classList.contains("no-height")) {
-      innerTagsDiv.classList.remove("no-height");
-    } else {
-      innerTagsDiv.classList.add("no-height");
+    if (innerTagsDiv.classList.contains("prod_click")) {
+      innerTagsDiv.style.height =
+        innerTagsDiv.style.height === "135px" ? "0" : "135px";
+    }
+    if (innerTagsDiv.classList.contains("offer_click")) {
+      innerTagsDiv.style.height =
+        innerTagsDiv.style.height === "135px" ? "0" : "135px";
+    }
+    if (innerTagsDiv.classList.contains("library_click")) {
+      innerTagsDiv.style.height =
+        innerTagsDiv.style.height === "135px" ? "0" : "135px";
+    }
+    if (innerTagsDiv.classList.contains("colection_click")) {
+      innerTagsDiv.style.height =
+        innerTagsDiv.style.height === "135px" ? "0" : "135px";
     }
   });
 });

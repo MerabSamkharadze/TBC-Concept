@@ -578,15 +578,16 @@ header {
 .tooltip_lang .tooltiptext_lang {
   visibility: hidden;
   width: 64px;
-  background-color: white;
-  border: 1px solid black;
+
+  background-color: #fff;
+  border: 1px solid #e1e4e5;
   color: #555f62;
   text-align: center;
   padding: 5px 0;
   position: absolute;
   z-index: 1;
   top: 100%;
-  /* left: 50%; */
+  box-shadow: 0 4px 6px 2px rgba(12, 43, 67, 0.05);
   margin-left: -55px;
 }
 .tooltiptext_lang span {
