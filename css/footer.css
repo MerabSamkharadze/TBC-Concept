@@ -99,6 +99,7 @@ footer {
   justify-content: center;
   flex-direction: column;
   gap: 24px;
+  pointer-events: none;
 }
 
 .footer-content-column .a-tag {
@@ -196,7 +197,9 @@ footer {
   .footer-header span {
     display: none;
   }
-
+  .footer-content-column {
+    pointer-events: auto;
+  }
   .rules {
     flex-direction: column;
   }
