@@ -180,14 +180,15 @@ footer {
   z-index: 999;
   display: none;
 }
+.active {
+  display: block;
+}
 
 @media (max-width: 1000px) {
   .footer-header span {
     display: none;
   }
-  .active {
-    display: none;
-  }
+
   .rules {
     flex-direction: column;
   }
