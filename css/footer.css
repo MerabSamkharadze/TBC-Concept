@@ -180,11 +180,12 @@ footer {
   z-index: 999;
   display: none;
 }
-.active {
-  display: block;
-}
-@media (max-width: 775px) {
+
+@media (max-width: 1000px) {
   .footer-header span {
+    display: none;
+  }
+  .active {
     display: none;
   }
   .rules {
@@ -229,7 +230,7 @@ footer {
   transition: height 0.8s;
 }
 
-@media (max-width: 775px) {
+@media (max-width: 1000px) {
   .colection_click,
   .library_click,
   .offer_click,
