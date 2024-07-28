@@ -79,7 +79,7 @@ footer {
 
 .footer-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   padding-bottom: 45px;
   border-bottom: 1px solid #eef1f1;
@@ -124,10 +124,71 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
+.contact_us_footer h2 {
+  font-weight: bolder;
+  color: black;
+  padding-bottom: 20px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.flex:hover {
+  text-decoration: underline;
+}
+.footer_social_list {
+  margin-top: 20px;
+  display: flex;
+}
+.social_icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #f9fafa;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+  display: flex;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.social_icon:hover {
+  color: #182cc0;
+  background-color: #eee;
+}
+.contuct_way {
+  margin-bottom: 30px;
+}
+.contact_us_footer {
+  margin-bottom: 30px;
+}
+.rules {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.burger_clicker {
+  width: 100%;
+  top: 20px;
+  min-height: 100vh;
+  position: fixed;
+  z-index: 999;
+  display: none;
+}
+.active {
+  display: block;
+}
 @media (max-width: 775px) {
   .footer-header span {
     display: none;
+  }
+  .rules {
+    flex-direction: column;
   }
 
   .footer-bottom {
@@ -137,13 +198,16 @@ footer {
 
   .footer-content {
     flex-direction: column;
+    align-items: start;
   }
 
   .footer-content-column {
     border-bottom: 1px solid #d1d5d6;
     margin-top: 20px;
     width: 100%;
+    cursor: pointer;
   }
+
   .footer-container {
     border-bottom: 1px solid #d1d5d6;
   }
@@ -162,7 +226,7 @@ footer {
 .prod_click {
   height: 135px;
   overflow: hidden;
-  transition: height 0.3s;
+  transition: height 0.8s;
 }
 
 @media (max-width: 775px) {
@@ -172,6 +236,9 @@ footer {
   .prod_click {
     height: 0;
     overflow: hidden;
-    transition: height 0.3s;
+    transition: height 0.8s;
+  }
+  .contact_us_footer h2 {
+    padding-top: 30px;
   }
 }

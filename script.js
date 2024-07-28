@@ -1,8 +1,10 @@
 "use strict";
+const burger_clicker = document.querySelector(".burger_clicker");
 document.addEventListener("DOMContentLoaded", function () {
   const menuButton = document.getElementById("menu-button");
 
   menuButton.addEventListener("click", function () {
+    burger_clicker.classList.toggle("active");
     menuButton.classList.toggle("active");
   });
 });
@@ -33,5 +35,3 @@ button_menu_trigger.addEventListener("click", () => {
     clicked = true;
   }
 });
-
-//swiper
